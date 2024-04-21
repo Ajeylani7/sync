@@ -1,0 +1,284 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 0;
+}
+
+/* Importing Open Sans and Cardo fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Define CSS classes for Open Sans */
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Define CSS classes for Cardo */
+.cardo-regular {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+}
+
+.cardo-bold {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /* Updated font for a modern look */
+  background-color: #e0e2e4; /* Softer, modern background color */
+}
+
+.nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Lighter, glass-like background */
+  backdrop-filter: blur(5px); /* Enhanced glass effect */
+  padding: 0 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav__logo img {
+  width: 80px;
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333; /* Updated text color for clarity */
+}
+
+.nav__profile {
+  display: flex;
+  align-items: center;
+}
+
+.nav__login {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  background-color: #007bff; /* Modern blue for button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for button */
+}
+
+.new__post {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  background-color: #007bff; /* Modern blue for button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for button */
+}
+.delete__post {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  background-color: #ff0000; /* Modern blue for button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+.nav__posts {
+  margin-right: 40px;
+  margin-top: 35px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  background-color: #ad9e1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for button */
+}
+.nav__sign {
+  margin-right: -20px;
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bolder;
+  width: 100px;
+  height: 30px;
+  background-color: #2600ff; /* Modern blue for button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for button */
+}
+
+.nav__avatar {
+  width: 45px;
+  height: 45px;
+  background-color: #dfd3d3b4; /* Unchanged */
+  border-radius: 50%;
+}
+
+.hero {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Lighter, glass-like background */
+  backdrop-filter: blur(5px); /* Enhanced glass effect */
+  border-radius: 20px;
+  color: #17013f; /* Updated to a deeper color for readability */
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.post {
+  width: 30%;
+  padding: 40px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* More transparent for a refined glass look */
+  backdrop-filter: blur(5px); /* Enhanced glass effect */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Updated shadow for more depth */
+}
+
+.post__title {
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Lighter, glass-like background */
+  backdrop-filter: blur(5px); /* Enhanced glass effect */
+  border-radius: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for lifted effect */
+}
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.form-page {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 40px auto;
+}
+
+.form-page h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.form-page .form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-page .btn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-page .btn:hover {
+  background-color: #0056b3;
+}
+#error_explanation {
+  color: red;
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#error_explanation h2 {
+  text-align: left;
+}
+
+#error_explanation ul {
+  list-style: none;
+  padding: 0;
+}

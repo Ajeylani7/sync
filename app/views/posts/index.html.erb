@@ -1,0 +1,16 @@
+<section class="posts">
+  <%= link_to 'New Post', new_post_path, class: "new__post" %>
+  <% @posts.each do |post| %>
+    <div class="post cardo-regular">
+      <h2 class="post__title"><%= post.title %></h2>
+      <p class="post__content"><%= post.content %></p>
+      <%= link_to 'Edit', edit_post_path(post), class: "new__post" %>
+<%= button_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, form_class: "btn", class: "delete__post" %>
+
+
+
+
+
+    </div>
+  <% end %>
+</section>

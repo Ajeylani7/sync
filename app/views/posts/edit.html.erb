@@ -1,0 +1,25 @@
+<div class="form-page">
+  <h1>Edit Post</h1>
+  <%= form_for @post do |f| %>
+    <% if @post.errors.any? %>
+      <div id="error_explanation">
+        <ul>
+          <% @post.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :content %>
+      <%= f.text_area :content, class: 'form-control' %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Update Post", class: 'btn' %>
+    </div>
+  <% end %>
+</div>
